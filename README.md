@@ -48,13 +48,13 @@ A `Spike` contains four facets:
 | `Data` | What information crossed the observed boundary? | a value, record, message, table column, or instruction | Data Engineer |
 | `Meaning` | What does the Data signify? | Celsius or Fahrenheit; gross or net revenue | Semantic / Ontologists |
 | `Structure` | How is the Data encoded, organized, generated, filtered, or validated? | schema version; date format; parser; rounding rule; constraint | API Engineers / Software Developers |
-| `World` | To what external entity, event, population, place, time, authority, or situation does the Data refer? | a vessel; a jurisdiction; fiscal year 2026; an applicable policy version | Domain Experts |
+| `Ground` | To what external entity, event, population, place, time, authority, or situation does the Data refer? | a vessel; a jurisdiction; fiscal year 2026; an applicable policy version | Domain Experts |
 
 A key operational benefit of **`tcxp`**—short for the Typed ConteXt Protocol—is that the contextual requirements contributed by different communities can be represented in one bundled data product rather than fragmented across separate artifacts.
 
 At the gauge layer, CGP is scale-invariant and computationally cheap by design:
 
-- every observed Spike has the same fixed structure: Data, Meaning, Structure, and World;
+- every observed Spike has the same fixed structure: Data, Meaning, Structure, and Ground;
 - each observation adds exactly three measurable Context Facet positions;
 - structural overhead is constant per observed Spike; and
 - aggregate observation work grows linearly with the number of declared crossings.
@@ -63,14 +63,14 @@ At the gauge layer, CGP is scale-invariant and computationally cheap by design:
 
 > Once Context has a standard shape, it becomes computable.
 
-`Data` is present by observation: a `Spike` exists because Data crossed the boundary. `Meaning`, `Structure`, and `World` are the three **Context Facets** that can be `DARK` or `LIT`.
+`Data` is present by observation: a `Spike` exists because Data crossed the boundary. `Meaning`, `Structure`, and `Ground` are the three **Context Facets** that can be `DARK` or `LIT`.
 
 - A Context Facet is `DARK` when it carries no resolving `cgvu:` referent at the observed crossing.
 - A Context Facet is `LIT` when it carries a resolving `cgvu:` referent.
 - `LIT` does not imply agreement. When the immediate sender and current reader expose comparable referents, the gauge can report `MATCH` or `NO MATCH`.
 - A `DARK` facet may happen to be interpreted correctly, but the protocol lacks the evidence needed to verify fidelity at that crossing.
 
-A **Dark Facet** is one unresolved `Meaning`, `Structure`, or `World` facet at a declared crossing. **Dark Context** is the resulting unresolved state across the facets and crossings selected for observation. The protocol may report a Dark Facet count or a proportion over a declared observation set.
+A **Dark Facet** is one unresolved `Meaning`, `Structure`, or `Ground` facet at a declared crossing. **Dark Context** is the resulting unresolved state across the facets and crossings selected for observation. The protocol may report a Dark Facet count or a proportion over a declared observation set.
 
 The Context Gauge does not decide which interpretation is correct or authoritative. That is a governance decision outside the gauge. The gauge makes the relevant conditions and comparisons explicit.
 
@@ -81,7 +81,7 @@ The Context Gauge does not decide which interpretation is correct or authoritati
 | `Actor` | A human, model, service, application, or other participant that records intent, reads through an interpretation, or flags a condition. Sender and reader are roles in an event, not different kinds of participant. |
 | Boundary `Interaction` | An observed `input`, `process`, or `output` event. |
 | `Observatron` | A frameless evaluator anchored at a declared boundary. It observes crossings, mints `Spike`s, measures what is present or unresolved, and routes state for evaluation. It does not choose or bind an interpretation. |
-| `Spike` | The four-facet object minted when Data crosses an observed boundary: `Data`, `Meaning`, `Structure`, and `World`. |
+| `Spike` | The four-facet object minted when Data crosses an observed boundary: `Data`, `Meaning`, `Structure`, and `Ground`. |
 | `Context State` | The boundary events, Spikes, facets, values, and statuses available for evaluation. |
 | `Intent Map` | The declared rulebook specifying what to observe, where to observe it, the relevant facet answer spaces, applicable conditions, and available routing instructions. |
 | `Governor` | The routing decision model that evaluates Context State under the Intent Map and applicable policy. Its `Decidability Gate` evaluates whether the current Context fixes the relevant operational verdict despite any remaining unresolved facets. |
