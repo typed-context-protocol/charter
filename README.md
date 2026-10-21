@@ -224,9 +224,18 @@ The destination is a W3C Working Group. The path toward it will be shaped by wha
 
 * For other decisions of the group, the Chair will seek majority support from the Steering Committee.
 
-Meetings
+### Meetings
 
 * From time to time the Chair may call meetings of the Steering Committee or of the entire Community Group.
 * All Community Group participants are invited to attend and participate in any meeting.
 
+### Intended Development Sequence
+
+The Chair will work with the Steering Committee toward publication of an early draft of the TCXP protocol and file format under the decision process in Section 10.
+
+The next phase will focus on reference implementations, followed by broader Community Group testing, brainstorming, and experimentation with the “seed” protocol. Hackathons and learning sessions may support this work.
+
+As implementation experience grows, the broader Community Group will help shape the specification’s future direction through proposals, feedback, and contributions. Publication and editorial decisions remain governed by Section 10.
+
+This sequence describes the intended focus of each phase; it does not restrict participants’ existing opportunities to contribute, review work, or attend meetings.
 
