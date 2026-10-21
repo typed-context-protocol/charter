@@ -212,3 +212,21 @@ These are alignment questions, not gates on creativity. They provide a common wa
 The group will seek shared understanding and consensus. When more formal process is needed, the applicable W3C Community Group process provides the framework.
 
 The destination is a W3C Working Group. The path toward it will be shaped by what the community learns.
+
+## 10. Decisions
+
+* The Chair will announce decision by the Community Group to take on a deliverable as follows:
+   - In response to a proposal to take on a deliverable as a Community Group deliverable, a majority of Steering Committee members support the proposal. In case of a tie the Community Group Chair casts a tiebreaker vote.
+   - If the vote happens at a synchronous meeting, the majority is determined among Steering Committee members at the meeting.
+   - If the vote happens asynchronously (e.g., by email), the majority is determined among all Steering Committee members, who must be allowed 5 business days to respond to the proposal.
+
+* Editors make decisions about what material will go into the specification(s) they edit. Editors should seek Community Group review for important changes.
+
+* For other decisions of the group, the Chair will seek majority support from the Steering Committee.
+
+Meetings
+
+* From time to time the Chair may call meetings of the Steering Committee or of the entire Community Group.
+* All Community Group participants are invited to attend and participate in any meeting.
+
+
